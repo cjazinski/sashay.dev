@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pose Release Notes</title>
+    <link>https://sashay.dev/pose-appcast.xml</link>
+    <description>Most recent changes to Pose</description>
+    <language>en</language>
+    <item>
+      <title>Version 0.1.0</title>
+      <link>https://sashay.dev/pose.html</link>
+      <sparkle:version>0.1.0</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <pubDate>Sat, 21 Nov 2026 13:45:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Pose-0.1.0.zip"
+        sparkle:edSignature="jecHl/ArO0UbvonHZce/Z0yvdjVjeIwSfltb7+ZmSfy5E53zNeftlZL3OQ3/7WJLzrmUvRKZgqnRd4Z44e97AA=="
+        length="2158220"
+        type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>
