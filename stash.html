@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stash — Clipboard history that stays on your Mac</title>
+<meta name="description" content="Everything you copy, one click away. Searchable clipboard history with text, images, and files. Zero telemetry, zero network calls.">
+<link rel="icon" href="/icon.png">
+<style>
+  :root{--bg:#131316;--bg2:#1a1a1e;--card:rgba(255,255,255,.03);--line:rgba(255,255,255,.07);--text:#f5f5f7;--muted:#a1a1aa;--amber:#ff9411;--green:#34d399}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--text);font-family:ui-rounded,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;line-height:1.6}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  a{color:var(--amber);text-decoration:none}
+  .hero{text-align:center;padding:64px 0 48px}
+  .hero h1{font-size:clamp(32px,6vw,52px);letter-spacing:-.035em;margin-bottom:12px}
+  .hero h1 em{font-style:normal;color:var(--amber)}
+  .hero p{color:var(--muted);font-size:18px;max-width:600px;margin:0 auto 20px}
+  .pill{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);padding:4px 10px;border-radius:999px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:48px 0}
+  @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:14px}
+  .card .dot{display:inline-block;width:34px;height:34px;border-radius:10px;background:rgba(255,148,17,.12);color:var(--amber);font-weight:800;text-align:center;line-height:34px;margin-bottom:12px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:48px 0}
+  @media(max-width:860px){.steps{grid-template-columns:1fr}}
+  .step h3{font-size:16px;margin-bottom:4px}
+  .step p{color:var(--muted);font-size:14px}
+  .step::before{counter-increment:step;content:counter(step);display:inline-block;width:30px;height:30px;border-radius:999px;background:rgba(255,148,17,.14);color:var(--amber);font-weight:800;text-align:center;line-height:30px;margin-bottom:12px}
+  h2{font-size:28px;letter-spacing:-.02em;margin:32px 0 8px}
+  .lede{color:var(--muted);max-width:560px;margin-bottom:36px}
+  .cta{display:inline-block;background:var(--amber);color:#171004;font-weight:700;font-size:16px;padding:13px 26px;border-radius:12px}
+  .pricing{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px}
+  @media(max-width:720px){.pricing{grid-template-columns:1fr}}
+  .plan{border-radius:18px;padding:26px;background:var(--card);border:1px solid var(--line)}
+  .plan.pro{border-color:rgba(255,148,17,.35);background:rgba(255,148,17,.05)}
+  .plan .name{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+  .plan .price{font-size:40px;font-weight:800;margin:8px 0 2px}
+  .plan ul{list-style:none;margin-top:14px}
+  .plan li{padding:5px 0 5px 24px;position:relative;color:var(--muted);font-size:14px}
+  .plan li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+  .tag{font-size:11px;color:var(--amber);border:1px solid rgba(255,148,17,.3);padding:2px 8px;border-radius:999px;margin-left:8px}
+  footer{border-top:1px solid var(--line);padding:34px 0 46px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  details{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:16px 20px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:600;font-size:15px}
+  summary::marker{color:var(--amber)}
+  details p{color:var(--muted);font-size:14px;margin-top:10px}
+  kbd{background:#1a1a1e;border:1px solid var(--line);border-radius:4px;padding:2px 6px;font-family:ui-monospace,monospace;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav style="display:flex;justify-content:space-between;padding:22px 0;align-items:center">
+  <span style="font-weight:800;font-size:20px">📋 Stash</span>
+  <span class="pill">Coming soon</span>
+</nav>
+
+<header class="hero">
+  <h1>Everything you copy, <em>one click away.</em></h1>
+  <p>Clipboard history that stays on your Mac. Text, images, files — searchable, keyboard-first, zero telemetry.</p>
+  <a class="cta" href="mailto:ai@jazinski.com?subject=Stash early access">Get notified</a>
+</header>
+
+<section>
+  <h2>Your clipboard, supercharged</h2>
+  <div class="grid">
+    <div class="card"><span class="dot">⌨️</span><h3>Keyboard-first</h3><p><kbd>⌘⇧V</kbd> opens history. Type to search. <kbd>⌘1</kbd>–<kbd>⌘9</kbd> to copy. <kbd>⌥1</kbd>–<kbd>⌥9</kbd> to copy and paste.</p></div>
+    <div class="card"><span class="dot">🔍</span><h3>Instant search</h3><p>Filter-as-you-type across everything you've ever copied. Find that API key you copied three hours ago.</p></div>
+    <div class="card"><span class="dot">📎</span><h3>Rich content</h3><p>Text (plain + rich), images, and file URLs. Everything the clipboard can hold, Stash remembers.</p></div>
+    <div class="card"><span class="dot">🚫</span><h3>App exclusions</h3><p>Exclude password managers, banking apps, or anything sensitive. Stash won't capture from them.</p></div>
+    <div class="card"><span class="dot">📌</span><h3>Pin favorites</h3><p>Pin frequently-used clips to the top. They survive auto-clear and always stay accessible.</p></div>
+    <div class="card"><span class="dot">🗑️</span><h3>Auto-clear</h3><p>Set history length (10–999 items) and auto-clear age (0–30 days). Your clipboard, your rules.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step"><h3>Copy normally</h3><p>Use <kbd>⌘C</kbd> in any app. Stash silently captures it in the background.</p></div>
+    <div class="step"><h3>Press <kbd>⌘⇧V</kbd></h3><p>Your clipboard history appears. Type to search, or browse with arrow keys.</p></div>
+    <div class="step"><h3>Copy or paste</h3><p><kbd>Enter</kbd> copies the selected item. <kbd>⌥Enter</kbd> copies and pastes into your previous app.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <div class="pricing">
+    <div class="plan">
+      <div class="name">Free</div>
+      <div class="price">$0</div>
+      <ul><li>Full clipboard history</li><li>Search + keyboard navigation</li><li>Text, images, files</li><li>Auto-clear + app exclusions</li></ul>
+    </div>
+    <div class="plan pro">
+      <div class="name">Pro <span class="tag">Coming soon</span></div>
+      <div class="price">$4.99 <small style="font-size:15px;color:var(--muted)">one-time</small></div>
+      <ul><li>Everything in Free</li><li>Snippet templates</li><li>Paste-as-plain-text</li><li>OCR (extract text from images)</li><li>All future updates</li></ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <details><summary>Does Stash sync to the cloud?</summary><p>No. Stash makes zero network connections. Your clipboard history lives on your Mac and nowhere else.</p></details>
+  <details><summary>Can I exclude my password manager?</summary><p>Yes. Add any app to the exclusion list and Stash won't capture anything copied from it.</p></details>
+  <details><summary>How is this different from Maccy?</summary><p>Stash adds source-app tracking, pin support with visual indicators, ⌥N auto-paste, app exclusions with a UI (Maccy requires config file editing), and the same design system as the rest of the portfolio.</p></details>
+</section>
+
+<footer>
+  <span>© 2026 Jazinski · sashay.dev/portfolio</span>
+  <span><a href="/">← All apps</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+</footer>
+</div>
+</body>
+</html>
