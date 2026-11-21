@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sashay Release Notes</title>
+    <link>https://sashay.dev/appcast.xml</link>
+    <description>Most recent changes to Sashay</description>
+    <language>en</language>
+    <item>
+      <title>Version 0.0.14</title>
+      <link>https://sashay.dev/</link>
+      <sparkle:version>0.0.14</sparkle:version>
+      <sparkle:shortVersionString>0.0.14</sparkle:shortVersionString>
+      <pubDate>Sat, 21 Nov 2026 05:30:24 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Sashay-0.0.14.zip"
+        sparkle:edSignature="qexBkMsMjb8B3LRVeaOTyIN3nFw6pLsTvUVjkZudAp/LswznCrkfLUUSg4wBExuucIVZqT8pS0J726tIrd0wAw=="
+        length="2100279"
+        type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>
