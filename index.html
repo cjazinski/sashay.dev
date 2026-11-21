@@ -76,7 +76,17 @@
 
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   @media (max-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; }
+    .hero { padding: 56px 0 48px; }
+    .hero p.sub { font-size: 16px; }
+    h2 { font-size: 26px; }
+    section { padding: 48px 0; }
+    .cta, .cta.ghost { display: block; max-width: 320px; margin: 0 auto; }
+    .cta.ghost { margin-top: 10px; }
+    nav { padding: 16px 0; }
+    footer { flex-direction: column; }
+  }
   .card {
     background: var(--card); border: 1px solid var(--line);
     border-radius: 16px; padding: 22px;
@@ -133,7 +143,7 @@
       <img class="big" src="/icon.png" alt="Sashay app icon">
       <h1>Work it <em>while you don't.</em></h1>
       <p class="sub">Sashay keeps your Mac — and your presence — awake with tiny, humanized cursor movements. Chat stays green, the screensaver stays off, and you stay you.</p>
-      <a class="cta" href="mailto:chris@jazinski.com?subject=Sashay%20early%20access">Get early access</a>
+      <a class="cta" href="mailto:ai@jazinski.com?subject=Sashay%20early%20access">Get early access</a>
       <a class="cta ghost" href="#how">See how it works</a>
       <p class="fineprint">macOS 13+ · menu-bar app · zero telemetry, ever</p>
     </header>
@@ -203,12 +213,12 @@
       </details>
       <details>
         <summary>Who made this?</summary>
-        <p>Christopher Jazinski — an independent developer who got tired of machines punishing stillness. Built for client #1. You know who you are.</p>
+        <p>Jazinski — an independent software studio that got tired of machines punishing stillness. Built for client #1. You know who you are.</p>
       </details>
     </section>
 
     <footer>
-      <span>© 2026 Christopher Jazinski · sashay.dev</span>
+      <span>© 2026 Jazinski Inc. · sashay.dev</span>
       <span>MIT-licensed core · zero JavaScript on this page, naturally</span>
     </footer>
   </div>
