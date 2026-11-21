@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Flow Release Notes</title>
+    <link>https://sashay.dev/flow-appcast.xml</link>
+    <description>Most recent changes to Flow</description>
+    <language>en</language>
+    <item>
+      <title>Version 0.0.1</title>
+      <link>https://sashay.dev/flow.html</link>
+      <sparkle:version>0.0.1</sparkle:version>
+      <sparkle:shortVersionString>0.0.1</sparkle:shortVersionString>
+      <pubDate>Sat, 21 Nov 2026 14:30:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Flow-0.0.1.zip"
+        sparkle:edSignature="PXGwN8r7VfEDSgAbjrvQ8zjy75mF7dmpVZy0AIb4ldSruOt2tWkdosSsu14VRQOpvaCa/K4zgR9UEaaoG7vvAQ=="
+        length="2045342"
+        type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>
