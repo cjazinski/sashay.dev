@@ -69,6 +69,38 @@
   .cta.ghost:hover { color: var(--text); border-color: rgba(255,255,255,.16); }
   .fineprint { color: var(--muted); font-size: 13px; margin-top: 18px; }
 
+  /* chips */
+  .chips { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+  .chips span { font-size: 12px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 5px 12px; border-radius: 999px; }
+  @media (max-width: 560px) { .chips { display: none; } }
+
+  /* menu-bar mockup */
+  .mockwrap { border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: linear-gradient(160deg, #232329 0%, #17171b 60%); box-shadow: 0 30px 80px -30px rgba(0,0,0,.6); }
+  .mb-strip { display: flex; align-items: center; justify-content: space-between; height: 30px; padding: 0 14px; background: rgba(0,0,0,.35); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.05); font-size: 12px; color: #d4d4d8; }
+  .mb-icons { letter-spacing: 8px; opacity: .85; }
+  .mb-cursor { display: inline-block; width: 10px; height: 14px; background: var(--amber); clip-path: polygon(0 0, 100% 55%, 45% 55%, 70% 100%, 50% 100%, 28% 60%, 0 85%); }
+  .mb-time { font-weight: 600; }
+  .mb-panel { width: 330px; margin: 26px 26px 34px auto; background: rgba(40,40,46,.97); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 16px; box-shadow: 0 24px 60px -12px rgba(0,0,0,.55); }
+  @media (max-width: 560px) { .mb-panel { width: auto; margin: 20px 16px 26px; } }
+  .mb-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .mb-head strong { font-size: 15px; letter-spacing: -.01em; display: block; }
+  .mb-head small { color: var(--muted); font-size: 10px; }
+  .mb-logo { width: 30px; height: 30px; border-radius: 8px; background: rgba(255,148,17,.14); color: var(--amber); font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  .mb-ver { margin-left: auto; font-size: 10px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 7px; }
+  .mb-card { background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+  .mb-card .mb-status { color: var(--green); font-weight: 700; }
+  .mb-card b { font-size: 13px; display: block; }
+  .mb-card small { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .mb-card > span { display: flex; }
+  .mb-card > div { margin-left: 10px; }
+  .mb-card { display: flex; align-items: center; }
+  .mb-cap { font-size: 9px; font-weight: 700; letter-spacing: .1em; color: var(--muted); }
+  .mb-row { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .mb-row span:first-child { color: var(--muted); }
+  .mb-btns { display: flex; gap: 6px; margin: 10px 0; }
+  .mb-btn { flex: 1; text-align: center; font-size: 11px; font-weight: 600; color: var(--text); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.1); border-radius: 8px; padding: 6px 0; }
+  .mb-foot { display: flex; justify-content: space-between; color: var(--muted); font-size: 10px; }
+
   /* sections */
   section { padding: 64px 0; }
   h2 { font-size: 32px; letter-spacing: -.03em; margin-bottom: 8px; }
@@ -146,7 +178,39 @@
       <a class="cta" href="mailto:ai@jazinski.com?subject=Sashay%20early%20access">Get early access</a>
       <a class="cta ghost" href="#how">See how it works</a>
       <p class="fineprint">macOS 13+ · menu-bar app · zero telemetry, ever</p>
+      <div class="chips">
+        <span>Humanized movement</span><span>Verified delivery</span><span>Working hours</span><span>Stats odometer</span>
+      </div>
     </header>
+
+    <section id="app">
+      <h2>At home in your menu bar</h2>
+      <p class="lede">One icon. Zero clutter. This is the real panel — rebuilt pixel-for-pixel in CSS.</p>
+      <div class="mockwrap">
+        <div class="mb-strip">
+          <span class="mb-icons">🔍-solid<span class="mb-cursor"></span>🔋 ⇩</span>
+          <span class="mb-time">Mon 9:41 AM</span>
+        </div>
+        <div class="mb-panel">
+          <div class="mb-head">
+            <span class="mb-logo">↗</span>
+            <div><strong>Sashay</strong><small>Work it while you don't.</small></div>
+            <span class="mb-ver">v0.0.1</span>
+          </div>
+          <div class="mb-card">
+            <span class="mb-status">↗</span>
+            <div><b>Keeping you active</b><small>Last move 9:40:12 AM</small></div>
+          </div>
+          <div class="mb-card">
+            <small class="mb-cap">STATS</small>
+            <div class="mb-row"><span>Today</span><span>128 moves · 46 ft</span></div>
+            <div class="mb-row"><span>All time</span><span>3,204 moves · 0.8 mi</span></div>
+          </div>
+          <div class="mb-btns"><span class="mb-btn">Pause</span><span class="mb-btn">Move Now</span><span class="mb-btn">Snooze ▾</span></div>
+          <div class="mb-foot"><span>◦ Launch at Login</span><span>Reset · Quit</span></div>
+        </div>
+      </div>
+    </section>
 
     <section id="features">
       <h2>Small moves. Big presence.</h2>
@@ -217,9 +281,14 @@
       </details>
     </section>
 
+    <section id="studio">
+      <h2>Small by choice. Useful by design.</h2>
+      <p class="lede">Jazinski is an independent studio building small, honest Mac utilities — no telemetry, no dark patterns, no subscriptions for the sake of it. One app at a time, with the details taken care of.</p>
+    </section>
+
     <footer>
       <span>© 2026 Jazinski Inc. · sashay.dev</span>
-      <span>MIT-licensed core · zero JavaScript on this page, naturally</span>
+      <span><a href="mailto:ai@jazinski.com">Support</a> · zero JavaScript on this page, naturally</span>
     </footer>
   </div>
 </main>
