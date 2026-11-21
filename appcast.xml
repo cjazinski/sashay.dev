@@ -6,16 +6,16 @@
     <description>Most recent changes to Sashay</description>
     <language>en</language>
     <item>
-      <title>Version 0.0.14</title>
+      <title>Version 0.1.0</title>
       <link>https://sashay.dev/</link>
-      <sparkle:version>0.0.14</sparkle:version>
-      <sparkle:shortVersionString>0.0.14</sparkle:shortVersionString>
-      <pubDate>Sat, 21 Nov 2026 05:34:47 +0000</pubDate>
+      <sparkle:version>0.1.0</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <pubDate>Sat, 21 Nov 2026 11:55:50 +0000</pubDate>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
       <enclosure
-        url="https://sashay.dev/download/Sashay-0.0.14.zip"
-        sparkle:edSignature="oY0zBao8X69XX5q5zODf51QtAO0rXKRI6untaQ2zGBDvZ6tHNzotdbQUDL06geMBCU1sLMH/WTk9hMrXG9oBAQ=="
-        length="2100279"
+        url="https://sashay.dev/download/Sashay-0.1.0.zip"
+        sparkle:edSignature="A+iLqllGvslyXmuNvZx3P1iUrDvk55iK/dvdn3oZpMJm7Jokjk5QXu3239RLVK6qIYtXG67Cx+8zU1Scu30bCQ=="
+        length="2100260"
         type="application/octet-stream"/>
     </item>
   </channel>
