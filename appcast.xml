@@ -6,6 +6,19 @@
     <description>Most recent changes to Sashay</description>
     <language>en</language>
     <item>
+      <title>Version 0.2.1</title>
+      <link>https://sashay.dev/.html</link>
+      <sparkle:version>0.2.1</sparkle:version>
+      <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+      <pubDate>Sun, 22 Nov 2026 10:30:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Sashay-0.2.1.zip"
+        sparkle:edSignature="3Ygra5hPDpc+op3+taRYPvPce+X4JuhtQrAlCbO9LUjLJLU4Q9CoU5gcDumeDJcF7j+6sTFuCTGC13Zy38y+Dg=="
+        length="2114411"
+        type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Version 0.2.0</title>
       <link>https://sashay.dev/</link>
       <sparkle:version>0.2.0</sparkle:version>

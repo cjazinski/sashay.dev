@@ -142,6 +142,15 @@
   .card p { color: var(--muted); font-size: 14px; }
   .card .dot { display: inline-block; width: 34px; height: 34px; border-radius: 10px; background: rgba(255,148,17,.12); color: var(--amber); font-weight: 800; text-align: center; line-height: 34px; margin-bottom: 12px; }
 
+  /* linked app cards */
+  a.card { display: block; color: var(--text); }
+  a.card:hover { color: var(--text); border-color: rgba(255,148,17,.35); transform: translateY(-2px); }
+  a.card { transition: border-color .15s ease, transform .15s ease; }
+  a.card:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+  a.card .appicon { display: block; width: 44px; height: 44px; border-radius: 11px; margin-bottom: 12px; box-shadow: 0 10px 28px -10px rgba(0,0,0,.6); }
+  a.card .more { display: inline-block; margin-top: 10px; font-size: 12px; font-weight: 700; color: var(--amber); }
+  a.card:hover .more { color: var(--amber-hi); }
+
   /* steps */
   .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: step; }
   @media (max-width: 860px) { .steps { grid-template-columns: 1fr; } }
@@ -183,7 +192,7 @@
   <div class="wrap">
     <nav>
       <div class="brand"><img src="/icon.png" alt="Sashay icon">Sashay</div>
-      <span class="pill">v0.1.0 · notarized by Apple</span>
+      <span class="pill">v0.2.1 · notarized by Apple</span>
     </nav>
 
     <header class="hero">
@@ -305,42 +314,48 @@
       <h2>More from the studio</h2>
       <p class="lede">Six native Mac utilities. One design system. Zero telemetry across the entire portfolio.</p>
       <div class="grid">
-        <div class="card">
-          <span class="dot">📸</span>
+        <a class="card" href="/pose.html">
+          <img class="appicon" src="/icons/pose.png" alt="" width="44" height="44">
           <h3>Pose</h3>
           <p>Capture, redact, and share screenshots safely. Auto-detects emails, API keys, and phone numbers — blurs them before you share.</p>
           <p style="margin-top:8px"><small style="color:var(--green);font-weight:600">Available now</small></p>
-        </div>
-        <div class="card">
-          <span class="dot">📋</span>
+          <span class="more">Learn more →</span>
+        </a>
+        <a class="card" href="/stash.html">
+          <img class="appicon" src="/icons/stash.png" alt="" width="44" height="44">
           <h3>Stash</h3>
           <p>Clipboard history that stays on your Mac. Searchable, keyboard-first, text + images + files. ⌘⇧V to search, ⌘1-9 to copy.</p>
           <p style="margin-top:8px"><small style="color:var(--green);font-weight:600">Available now</small></p>
-        </div>
-        <div class="card">
-          <span class="dot">✨</span>
+          <span class="more">Learn more →</span>
+        </a>
+        <a class="card" href="/dazzle.html">
+          <img class="appicon" src="/icons/dazzle.png" alt="" width="44" height="44">
           <h3>Dazzle</h3>
           <p>Cursor spotlight for presentations and screen recordings. Nobody loses the pointer again.</p>
           <p style="margin-top:8px"><small style="color:var(--green);font-weight:600">Available now</small></p>
-        </div>
-        <div class="card">
-          <span class="dot">🔄</span>
+          <span class="more">Learn more →</span>
+        </a>
+        <a class="card" href="/flow.html">
+          <img class="appicon" src="/icons/flow.png" alt="" width="44" height="44">
           <h3>Flow</h3>
           <p>Natural scrolling on your trackpad, normal scrolling on your mouse. Per-app rules.</p>
           <p style="margin-top:8px"><small style="color:var(--green);font-weight:600">Available now</small></p>
-        </div>
-        <div class="card">
-          <span class="dot">📐</span>
+          <span class="more">Learn more →</span>
+        </a>
+        <a class="card" href="/align.html">
+          <img class="appicon" src="/icons/align.png" alt="" width="44" height="44">
           <h3>Align</h3>
           <p>⌘⌥+arrows snap windows to halves, quarters, and full screen. No configuration needed.</p>
           <p style="margin-top:8px"><small style="color:var(--green);font-weight:600">Available now</small></p>
-        </div>
-        <div class="card">
-          <span class="dot">🖱️</span>
+          <span class="more">Learn more →</span>
+        </a>
+        <a class="card" href="#app">
+          <img class="appicon" src="/icons/sashay.png" alt="" width="44" height="44">
           <h3>Sashay</h3>
           <p>The flagship. Randomized cursor movements that keep your Mac — and your status — awake.</p>
           <p style="margin-top:8px"><small style="color:var(--green);font-weight:600">Available now</small></p>
-        </div>
+          <span class="more">Learn more →</span>
+        </a>
       </div>
     </section>
 

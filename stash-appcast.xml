@@ -6,6 +6,19 @@
     <description>Most recent changes to Stash</description>
     <language>en</language>
     <item>
+      <title>Version 0.1.1</title>
+      <link>https://sashay.dev/stash.html</link>
+      <sparkle:version>0.1.1</sparkle:version>
+      <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+      <pubDate>Sun, 22 Nov 2026 10:30:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Stash-0.1.1.zip"
+        sparkle:edSignature="CZv/AJxa7B/K/05vgGKznYS25eGhtmBk1gfmkJyDNpASJUvEybDyOlH1IAk3k3zRJ9rYhv85lz/GZ5/HdImSDQ=="
+        length="1496711"
+        type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Version 0.1.0</title>
       <link>https://sashay.dev/stash.html</link>
       <sparkle:version>0.1.0</sparkle:version>
