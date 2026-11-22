@@ -6,6 +6,19 @@
     <description>Most recent changes to Dazzle</description>
     <language>en</language>
     <item>
+      <title>Version 0.0.3</title>
+      <link>https://sashay.dev/dazzle.html</link>
+      <sparkle:version>0.0.3</sparkle:version>
+      <sparkle:shortVersionString>0.0.3</sparkle:shortVersionString>
+      <pubDate>Sun, 22 Nov 2026 12:30:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Dazzle-0.0.3.zip"
+        sparkle:edSignature="jn6RPQjrb2WUScfs3xKm55SQyhVZm2L4bInCDnRuGk/FTmtvvolutRHX/cOSt5r5O4z4uR/+wWSEJGGTpCeiAQ=="
+        length="3510802"
+        type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Version 0.0.2</title>
       <link>https://sashay.dev/dazzle.html</link>
       <sparkle:version>0.0.2</sparkle:version>
