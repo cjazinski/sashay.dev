@@ -6,6 +6,19 @@
     <description>Most recent changes to Align</description>
     <language>en</language>
     <item>
+      <title>Version 0.0.2</title>
+      <link>https://sashay.dev/align.html</link>
+      <sparkle:version>0.0.2</sparkle:version>
+      <sparkle:shortVersionString>0.0.2</sparkle:shortVersionString>
+      <pubDate>Sat, 21 Nov 2026 19:40:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Align-0.0.2.zip"
+        sparkle:edSignature="NqZOe0k/OAb9dhhfmxRISbikI/npv1TqYketnhsGUlpWbe5LQdFpC66bO5abwmb35MfQAqxQAgS4lCjW0CuaCg=="
+        length="2040980"
+        type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Version 0.0.1</title>
       <link>https://sashay.dev/align.html</link>
       <sparkle:version>0.0.1</sparkle:version>
