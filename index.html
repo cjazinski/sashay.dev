@@ -86,35 +86,16 @@
   .chips span { font-size: 12px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); padding: 5px 12px; border-radius: 999px; }
   @media (max-width: 560px) { .chips { display: none; } }
 
-  /* menu-bar mockup */
-  .mockwrap { border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: linear-gradient(160deg, #232329 0%, #17171b 60%); box-shadow: 0 30px 80px -30px rgba(0,0,0,.6); }
-  .mb-strip { display: flex; align-items: center; justify-content: space-between; height: 30px; padding: 0 14px; background: rgba(0,0,0,.35); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.05); font-size: 12px; color: #d4d4d8; }
-  .mb-icons { letter-spacing: 8px; opacity: .85; }
-  .mb-cursor { display: inline-block; width: 10px; height: 14px; background: var(--amber); clip-path: polygon(0 0, 100% 55%, 45% 55%, 70% 100%, 50% 100%, 28% 60%, 0 85%); }
-  .mb-time { font-weight: 600; }
-  .mb-panel { width: 330px; margin: 26px 26px 34px auto; background: rgba(40,40,46,.97); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 16px; box-shadow: 0 24px 60px -12px rgba(0,0,0,.55); }
-  @media (max-width: 560px) { .mb-panel { width: auto; margin: 20px 16px 26px; } }
-  .mb-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-  .mb-head strong { font-size: 15px; letter-spacing: -.01em; display: block; }
-  .mb-head small { color: var(--muted); font-size: 10px; }
-  .mb-logo { width: 30px; height: 30px; border-radius: 8px; background: rgba(255,148,17,.14); color: var(--amber); font-weight: 800; display: flex; align-items: center; justify-content: center; }
-  .mb-ver { margin-left: auto; font-size: 10px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 7px; }
-  .mb-card { background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
-  .mb-card .mb-status { color: var(--green); font-weight: 700; }
-  .mb-card b { font-size: 13px; display: block; }
-  .mb-card small { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
-  .mb-card > span { display: flex; }
-  .mb-card > div { margin-left: 10px; }
-  .mb-card { display: flex; align-items: center; }
-  .mb-cap { font-size: 9px; font-weight: 700; letter-spacing: .1em; color: var(--muted); }
-  .mb-row { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; margin-top: 4px; font-variant-numeric: tabular-nums; }
-  .mb-row span:first-child { color: var(--muted); }
-  .mb-btns { display: flex; gap: 6px; margin: 10px 0 0; }
-  .mb-btn { flex: 1; text-align: center; font-size: 11px; font-weight: 600; color: var(--text); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.1); border-radius: 8px; padding: 6px 0; }
-  .mb-primary { background: rgba(255,148,17,.92); color: #171004; border: none; font-size: 12px; padding: 8px 0; }
-  .mb-verify { color: var(--green); font-size: 10px; font-weight: 600; margin: 8px 0 0; }
-  .mb-lic { color: var(--green); font-size: 10px; font-weight: 600; border: 1px solid rgba(52,211,153,.3); border-radius: 8px; padding: 5px 10px; margin-top: 10px; }
-  .mb-foot { display: flex; justify-content: space-between; color: var(--muted); font-size: 10px; }
+  /* app shelf */
+  .shelf { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin: 36px 0 8px; }
+  @media (max-width: 980px) { .shelf { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 640px) { .shelf { grid-template-columns: repeat(2, 1fr); } }
+  a.tile { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 10px 12px; color: var(--text); transition: border-color .15s ease, transform .15s ease; }
+  a.tile:hover { color: var(--text); border-color: rgba(255,148,17,.35); transform: translateY(-2px); }
+  a.tile:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+  a.tile img { width: 44px; height: 44px; border-radius: 11px; box-shadow: 0 8px 22px -8px rgba(0,0,0,.55); }
+  a.tile .n { font-size: 13px; font-weight: 700; letter-spacing: -.01em; }
+  a.tile .d { font-size: 11px; color: var(--muted); line-height: 1.35; }
 
   /* sections */
   section { padding: 64px 0; }
@@ -208,34 +189,44 @@
     </header>
 
     <section id="app">
-      <h2>At home in your menu bar</h2>
-      <p class="lede">One icon. Zero clutter. This is the real panel — rebuilt pixel-for-pixel in CSS.</p>
-      <div class="mockwrap">
-        <div class="mb-strip">
-          <span class="mb-icons">🔍 <span class="mb-cursor"></span> 🔋 ⇩</span>
-          <span class="mb-time">Mon 9:41 AM</span>
-        </div>
-        <div class="mb-panel">
-          <div class="mb-head">
-            <span class="mb-logo">↗</span>
-            <div><strong>Sashay</strong><small>Work it while you don't.</small></div>
-            <span class="mb-ver">v0.2.3</span>
-          </div>
-          <div class="mb-card">
-            <span class="mb-status">↗</span>
-            <div><b>Keeping you active</b><small>Last move 9:40:12 AM</small></div>
-          </div>
-          <div class="mb-btns"><span class="mb-btn mb-primary">Pause</span></div>
-          <div class="mb-btns"><span class="mb-btn">Move Now</span><span class="mb-btn">Snooze ▾</span></div>
-          <div class="mb-verify">✓ Mouse events verified — your Mac sees real input</div>
-          <div class="mb-card">
-            <small class="mb-cap">Stats</small>
-            <div class="mb-row"><span>Today</span><span>128 moves · 46 ft</span></div>
-            <div class="mb-row"><span>All time</span><span>3,204 moves · 0.8 mi</span></div>
-          </div>
-          <div class="mb-lic">PRO · License active</div>
-          <div class="mb-foot"><span>◦ Launch at Login</span><span>Reset · Quit</span></div>
-        </div>
+      <h2>The whole family, at home in your menu bar</h2>
+      <p class="lede">Seven small apps. One icon each. Zero telemetry across the entire shelf.</p>
+      <div class="shelf">
+        <a class="tile" href="#pricing">
+          <img src="/icons/sashay.png" alt="" width="44" height="44">
+          <span class="n">Sashay</span>
+          <span class="d">Keeps your Mac — and your status — awake</span>
+        </a>
+        <a class="tile" href="/tally.html">
+          <img src="/icons/tally.png" alt="" width="44" height="44">
+          <span class="n">Tally</span>
+          <span class="d">Where your day went, locally</span>
+        </a>
+        <a class="tile" href="/stash.html">
+          <img src="/icons/stash.png" alt="" width="44" height="44">
+          <span class="n">Stash</span>
+          <span class="d">Clipboard history that never leaves</span>
+        </a>
+        <a class="tile" href="/pose.html">
+          <img src="/icons/pose.png" alt="" width="44" height="44">
+          <span class="n">Pose</span>
+          <span class="d">Screenshots, auto-redacted</span>
+        </a>
+        <a class="tile" href="/dazzle.html">
+          <img src="/icons/dazzle.png" alt="" width="44" height="44">
+          <span class="n">Dazzle</span>
+          <span class="d">Spotlight your cursor on calls</span>
+        </a>
+        <a class="tile" href="/flow.html">
+          <img src="/icons/flow.png" alt="" width="44" height="44">
+          <span class="n">Flow</span>
+          <span class="d">Trackpad natural, mouse normal</span>
+        </a>
+        <a class="tile" href="/align.html">
+          <img src="/icons/align.png" alt="" width="44" height="44">
+          <span class="n">Align</span>
+          <span class="d">⌘⌥+arrows window snapping</span>
+        </a>
       </div>
     </section>
 
