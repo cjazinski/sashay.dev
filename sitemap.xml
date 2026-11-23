@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sashay.dev/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://sashay.dev/tally.html</loc></url>
+  <url><loc>https://sashay.dev/pose.html</loc></url>
+  <url><loc>https://sashay.dev/stash.html</loc></url>
+  <url><loc>https://sashay.dev/dazzle.html</loc></url>
+  <url><loc>https://sashay.dev/flow.html</loc></url>
+  <url><loc>https://sashay.dev/align.html</loc></url>
   <url><loc>https://sashay.dev/privacy.html</loc></url>
   <url><loc>https://sashay.dev/terms.html</loc></url>
 </urlset>

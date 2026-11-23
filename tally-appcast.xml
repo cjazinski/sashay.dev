@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Tally Release Notes</title>
+    <link>https://sashay.dev/tally-appcast.xml</link>
+    <description>Most recent changes to Tally</description>
+    <language>en</language>
+    <item>
+      <title>Version 0.0.1</title>
+      <link>https://sashay.dev/tally.html</link>
+      <sparkle:version>0.0.1</sparkle:version>
+      <sparkle:shortVersionString>0.0.1</sparkle:shortVersionString>
+      <pubDate>Sun, 22 Nov 2026 21:00:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Tally-0.0.1.zip"
+        sparkle:edSignature="/j5EOSx+kZvU5Fu2bxzhmjqob1zVC09odwdDcyx9aVXStrdZ+6SWPpYtRb0UsPbnYWrsu1mwUIOAzbNSrLcGCg=="
+        length="3393618"
+        type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>

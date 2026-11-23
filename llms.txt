@@ -1,0 +1,26 @@
+# sashay.dev
+
+> A portfolio of seven native macOS menu-bar utilities built on one design system, all sharing a single promise: zero telemetry, one-time pricing, no accounts, no subscriptions. Every app is notarized by Apple, updates itself via Sparkle, and makes zero network calls. Built by an independent one-person studio.
+
+## Apps
+
+- [Sashay](https://sashay.dev/): Menu-bar mouse jiggler that keeps your Mac awake with humanized, randomized cursor movement. Verified delivery, working-hours schedules, stats odometer, streaks and milestones. Free core; Pro $6.99 one-time.
+- [Stash](https://sashay.dev/stash.html): Clipboard history that stays on your Mac. Searchable, keyboard-first (⌘⇧V), text + images + files, image thumbnails, paste-as-plain-text, pin support, password-manager clips never recorded. Free.
+- [Pose](https://sashay.dev/pose.html): Screenshot tool that auto-detects and redacts sensitive content (emails, API keys, phone numbers, credit cards, IPs) on-device before you share. Annotation tools, pin-to-screen. Free download.
+- [Dazzle](https://sashay.dev/dazzle.html): Cursor spotlight for presentations and screen recordings — a halo follows your pointer so nobody loses it. Free download.
+- [Flow](https://sashay.dev/flow.html): Natural scrolling on the trackpad, normal scrolling on the mouse, with per-app rules. Free download.
+- [Align](https://sashay.dev/align.html): Window snapping via ⌘⌥+arrows — halves, quarters, maximize, center. No configuration. Free download.
+- [Tally](https://sashay.dev/tally.html): Local-only activity tracker ("where did your day go — without telling anyone"). Automatic app/category tracking, pomodoro focus sessions that log what you actually did, 1Password/Keychain windows recorded title-less. Free core; Pro $9.99 one-time.
+
+## Why these apps
+
+Every incumbent in these categories either charges a subscription, phones home, or both. This portfolio is the counter-position: native AppKit, pay-once, zero telemetry — the privacy policy promises zero network connections, and the license validation is offline Ed25519 so it's verifiably true.
+
+## Downloads
+
+All apps download directly from https://sashay.dev/download/ and update themselves via signed Sparkle appcasts (https://sashay.dev/appcast.xml, plus per-app feeds linked on each page). Homebrew: `brew tap jazinski/tap`.
+
+## Policies
+
+- [Privacy](https://sashay.dev/privacy.html): the short version — no analytics, no accounts, no network calls from the apps, ever.
+- [Terms](https://sashay.dev/terms.html)
