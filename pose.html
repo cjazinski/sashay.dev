@@ -47,10 +47,14 @@
   summary{cursor:pointer;font-weight:600;font-size:15px}
   summary::marker{color:var(--amber)}
   details p{color:var(--muted);font-size:14px;margin-top:10px}
+.crumbs{font-size:12px;color:var(--muted);padding-top:18px}
+  .crumbs a{color:var(--amber)}
+  .crumbs .sep{margin:0 8px;opacity:.5}
 </style>
 </head>
 <body>
 <div class="wrap">
+<div class="crumbs"><a href="/">All apps</a><span class="sep">›</span><span>Pose</span></div>
 <nav style="display:flex;justify-content:space-between;padding:22px 0;align-items:center">
   <img src="/icons/pose.png" alt="" style="width:24px;height:24px;border-radius:6px;vertical-align:-5px;margin-right:7px"><span style="font-weight:800;font-size:20px">Pose</span>
   <span class="pill" style="color:var(--green);border-color:rgba(52,211,153,.35)">v0.1.2 — Free download</span>

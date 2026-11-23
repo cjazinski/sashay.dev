@@ -42,10 +42,14 @@
   summary::marker{color:var(--amber)}
   details p{color:var(--muted);font-size:14px;margin-top:10px}
   footer{border-top:1px solid var(--line);padding:34px 0 46px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.crumbs{font-size:12px;color:var(--muted);padding-top:18px}
+  .crumbs a{color:var(--amber)}
+  .crumbs .sep{margin:0 8px;opacity:.5}
 </style>
 </head>
 <body>
 <div class="wrap">
+<div class="crumbs"><a href="/">All apps</a><span class="sep">›</span><span>Tally</span></div>
 <nav style="display:flex;justify-content:space-between;padding:22px 0;align-items:center">
   <img src="/icons/tally.png" alt="" style="width:24px;height:24px;border-radius:6px;vertical-align:-5px;margin-right:7px"><span style="font-weight:800;font-size:20px">Tally</span>
   <span class="pill">v0.0.1 — Free download</span>
