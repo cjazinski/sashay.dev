@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally — Where did your day go?</title>
+<meta name="description" content="Local-only activity tracker for Mac. See where your day went — which apps, which categories — without a single byte leaving your machine. Pomodoro focus sessions built in. Zero telemetry, one-time Pro.">
+<link rel="icon" href="/icon.png">
+<style>
+  :root{--bg:#131316;--bg2:#1a1a1e;--card:rgba(255,255,255,.03);--line:rgba(255,255,255,.07);--text:#f5f5f7;--muted:#a1a1aa;--amber:#ff9411;--green:#34d399}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--text);font-family:ui-rounded,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;line-height:1.6}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  a{color:var(--amber);text-decoration:none}
+  .hero{text-align:center;padding:64px 0 48px}
+  .hero h1{font-size:clamp(32px,6vw,52px);letter-spacing:-.035em;margin-bottom:12px}
+  .hero h1 em{font-style:normal;color:var(--amber)}
+  .hero p{color:var(--muted);font-size:18px;max-width:620px;margin:0 auto 20px}
+  .pill{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--green);border:1px solid rgba(52,211,153,.35);padding:4px 10px;border-radius:999px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:48px 0}
+  @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:14px}
+  .card .dot{display:inline-block;width:34px;height:34px;border-radius:10px;background:rgba(255,148,17,.12);color:var(--amber);font-weight:800;text-align:center;line-height:34px;margin-bottom:12px}
+  h2{font-size:28px;letter-spacing:-.02em;margin:32px 0 8px}
+  .lede{color:var(--muted);max-width:560px;margin-bottom:36px}
+  .cta{display:inline-block;background:var(--amber);color:#171004;font-weight:700;font-size:16px;padding:13px 26px;border-radius:12px}
+  .pricing{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px}
+  @media(max-width:720px){.pricing{grid-template-columns:1fr}}
+  .plan{border-radius:18px;padding:26px;background:var(--card);border:1px solid var(--line)}
+  .plan.pro{border-color:rgba(255,148,17,.35);background:rgba(255,148,17,.05)}
+  .plan .name{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+  .plan .price{font-size:40px;font-weight:800;margin:8px 0 2px}
+  .plan ul{list-style:none;margin-top:14px}
+  .plan li{padding:5px 0 5px 24px;position:relative;color:var(--muted);font-size:14px}
+  .plan li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+  .tag{font-size:11px;color:var(--amber);border:1px solid rgba(255,148,17,.3);padding:2px 8px;border-radius:999px;margin-left:8px}
+  details{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:16px 20px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:600;font-size:15px}
+  summary::marker{color:var(--amber)}
+  details p{color:var(--muted);font-size:14px;margin-top:10px}
+  footer{border-top:1px solid var(--line);padding:34px 0 46px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav style="display:flex;justify-content:space-between;padding:22px 0;align-items:center">
+  <img src="/icons/tally.png" alt="" style="width:24px;height:24px;border-radius:6px;vertical-align:-5px;margin-right:7px"><span style="font-weight:800;font-size:20px">Tally</span>
+  <span class="pill">v0.0.1 — Free download</span>
+</nav>
+
+<header class="hero">
+  <img src="/icons/tally.png" alt="Tally app icon" style="width:128px;height:128px;border-radius:28px;box-shadow:0 24px 70px -18px rgba(255,148,17,.45);margin-bottom:24px">
+  <h1>Where did your day go — <em>without telling anyone?</em></h1>
+  <p>Tally tracks which apps you actually use, sorts them into categories, and times your focus sessions. Everything stays on your Mac. No account, no cloud, no telemetry — ever.</p>
+  <a class="cta" href="/download/Tally-latest.zip">Download for Mac</a>
+</header>
+
+<section>
+  <h2>The anti-RescueTime</h2>
+  <p class="lede">Time trackers upload your workday to their servers by design. Tally is the opposite: your activity log is a local file your Mac never shares.</p>
+  <div class="grid">
+    <div class="card"><span class="dot">⏱</span><h3>Automatic tracking</h3><p>Frontmost app + window title sampled on-device. Xcode counts as Code, Slack as Comms — rules classify automatically.</p></div>
+    <div class="card"><span class="dot">🍅</span><h3>Focus sessions</h3><p>A pomodoro timer that talks to the tracker: sessions log as Focus time, and the end-of-session report shows what you actually did those 25 minutes.</p></div>
+    <div class="card"><span class="dot">🔒</span><h3>Private by default</h3><p>1Password, Keychain, and security panes are logged title-less as "Private". Password-manager clips never touch disk.</p></div>
+    <div class="card"><span class="dot">📊</span><h3>Day at a glance</h3><p>Today's totals, top categories, and an eight-hour day strip — colored, tallied, monospaced.</p></div>
+    <div class="card"><span class="dot">🕯</span><h3>Idle-aware</h3><p>Coffee breaks don't count. Hardware idle detection pauses accrual and never backfills the gap.</p></div>
+    <div class="card"><span class="dot">🚫</span><h3>Zero telemetry</h3><p>No network calls. No analytics. No account. Your day is nobody's business — especially not a server's.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <div class="pricing">
+    <div class="plan">
+      <div class="name">Free</div>
+      <div class="price">$0</div>
+      <ul><li>Full activity tracking</li><li>Focus sessions</li><li>7 days of history</li></ul>
+    </div>
+    <div class="plan pro">
+      <div class="name">Pro</div>
+      <div class="price">$9.99 <small style="font-size:15px;color:var(--muted)">one-time</small></div>
+      <ul><li>Unlimited history</li><li>All future updates</li><li>Supports independent software</li></ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <details><summary>Does Tally send my activity anywhere?</summary><p>No. The tracker writes a local JSON file under your Application Support folder. Tally makes zero network connections — the same promise every app in this portfolio keeps.</p></details>
+  <details><summary>What about sensitive windows?</summary><p>1Password, Keychain Access, SecurityAgent, and security-related System Settings panes are recorded with no title, under a "Private" bucket. The window title is never read for those apps.</p></details>
+  <details><summary>How is this different from Screen Time?</summary><p>Screen Time is buried in System Settings, syncs through iCloud, and offers no categories, rules, focus sessions, or export. Tally is menu-bar-first, local-only, and built for people who work in apps all day.</p></details>
+</section>
+
+<footer>
+  <span>© 2026 Jazinski · sashay.dev/portfolio</span>
+  <span><a href="/">← All apps</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+</footer>
+</div>
+</body>
+</html>
