@@ -6,6 +6,19 @@
     <description>Most recent changes to Pose</description>
     <language>en</language>
     <item>
+      <title>Version 0.2.0</title>
+      <link>https://sashay.dev/pose.html</link>
+      <sparkle:version>0.2.0</sparkle:version>
+      <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+      <pubDate>Sun, 23 Nov 2026 15:00:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Pose-0.2.0.zip"
+        sparkle:edSignature="LEj9rnR8kf/Ks3Y0PTNBKTARN2xOUtkJ17QebnSxcBHfbLqHgWLB5ywPLfDC1kjY3X7wogtWJGl4aK5soELzCg=="
+        length="3449637"
+        type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Version 0.1.2</title>
       <link>https://sashay.dev/pose.html</link>
       <sparkle:version>0.1.2</sparkle:version>

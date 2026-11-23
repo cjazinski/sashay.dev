@@ -6,6 +6,19 @@
     <description>Most recent changes to Flow</description>
     <language>en</language>
     <item>
+      <title>Version 0.1.0</title>
+      <link>https://sashay.dev/flow.html</link>
+      <sparkle:version>0.1.0</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <pubDate>Sun, 23 Nov 2026 15:00:00 +0000</pubDate>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://sashay.dev/download/Flow-0.1.0.zip"
+        sparkle:edSignature="HF/amtKMD1pn4A5cmJ//s4pIxpoq6CHH3OKNq1Xf4qp4eEm9/pAPmQyw6uEa7jLIXyeMMyuHDWCT3M95q/5BCQ=="
+        length="3362175"
+        type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Version 0.0.3</title>
       <link>https://sashay.dev/flow.html</link>
       <sparkle:version>0.0.3</sparkle:version>
