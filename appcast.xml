@@ -6,81 +6,16 @@
     <description>Most recent changes to Sashay</description>
     <language>en</language>
     <item>
-      <title>Version 0.3.0</title>
-      <link>https://sashay.dev/.html</link>
-      <sparkle:version>0.3.0</sparkle:version>
-      <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
-      <pubDate>Sun, 23 Nov 2026 15:00:00 +0000</pubDate>
-      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <enclosure
-        url="https://sashay.dev/download/Sashay-0.3.0.zip"
-        sparkle:edSignature="YI57yRQGOXaGIE3BOspR0MVMER/5CLkfFaSuw/pBBsTUIXQVkFhBjLuYifevGwkNR/Ozrv5uFbMSUsyRzajWDg=="
-        length="3394935"
-        type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Version 0.2.3</title>
+      <title>Version 0.4.0</title>
       <link>https://sashay.dev/</link>
-      <sparkle:version>0.2.3</sparkle:version>
-      <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
-      <pubDate>Sun, 22 Nov 2026 19:50:00 +0000</pubDate>
+      <sparkle:version>26</sparkle:version>
+      <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+      <pubDate>Tue, 24 Nov 2026 19:56:06 +0000</pubDate>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
       <enclosure
-        url="https://sashay.dev/download/Sashay-0.2.3.zip"
-        sparkle:edSignature="GUfnEDPpXL76G5nlgBU4Qb7JH0CL4wBOZzRiFNMusnUlDdNttxd57RNAuJHNKop36use8Bnm3MNf7ASSeQOuAQ=="
-        length="3361915"
-        type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Version 0.2.2</title>
-      <link>https://sashay.dev/.html</link>
-      <sparkle:version>0.2.2</sparkle:version>
-      <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
-      <pubDate>Sun, 22 Nov 2026 12:30:00 +0000</pubDate>
-      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <enclosure
-        url="https://sashay.dev/download/Sashay-0.2.2.zip"
-        sparkle:edSignature="CYUiTVCBm6McR/3HYV5K6XNP0ALPwZZ2APse5qcHV2dtOOwmkv4ItKsZ8Ct2r0aAH+0y5daIJvkN4XIMYi7ZCg=="
-        length="3361917"
-        type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Version 0.2.1</title>
-      <link>https://sashay.dev/.html</link>
-      <sparkle:version>0.2.1</sparkle:version>
-      <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
-      <pubDate>Sun, 22 Nov 2026 10:30:00 +0000</pubDate>
-      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <enclosure
-        url="https://sashay.dev/download/Sashay-0.2.1.zip"
-        sparkle:edSignature="3Ygra5hPDpc+op3+taRYPvPce+X4JuhtQrAlCbO9LUjLJLU4Q9CoU5gcDumeDJcF7j+6sTFuCTGC13Zy38y+Dg=="
-        length="2114411"
-        type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Version 0.2.0</title>
-      <link>https://sashay.dev/</link>
-      <sparkle:version>0.2.0</sparkle:version>
-      <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
-      <pubDate>Sat, 21 Nov 2026 14:30:00 +0000</pubDate>
-      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <enclosure
-        url="https://sashay.dev/download/Sashay-0.2.0.zip"
-        sparkle:edSignature="7ZOhv92e0WZ0UrF9paxxn/Fd9UoPSZMSMSbAigKL28xoWEazCS3sVhBFFgznOJ7qxash3uhn5mbDG/5CEaBRBA=="
-        length="2114399"
-        type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Version 0.1.0</title>
-      <link>https://sashay.dev/</link>
-      <sparkle:version>0.1.0</sparkle:version>
-      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
-      <pubDate>Sat, 21 Nov 2026 11:55:50 +0000</pubDate>
-      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <enclosure
-        url="https://sashay.dev/download/Sashay-0.1.0.zip"
-        sparkle:edSignature="A+iLqllGvslyXmuNvZx3P1iUrDvk55iK/dvdn3oZpMJm7Jokjk5QXu3239RLVK6qIYtXG67Cx+8zU1Scu30bCQ=="
-        length="2100260"
+        url="https://sashay.dev/download/Sashay-0.4.0.zip"
+        sparkle:edSignature="F9f2ScUqrTu+ID/5VwZghQA08zGwTDKDt9ZhczsiMIOMkIgQfjUUEdAReYJo+EyPvJ7MjpIiaIoxICXxiPo/DA=="
+        length="3406740"
         type="application/octet-stream"/>
     </item>
   </channel>
